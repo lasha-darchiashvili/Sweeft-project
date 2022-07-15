@@ -1,13 +1,161 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: sans-serif;
 }
+
+html {
+  font-size: 80%;
+}
+
+.card-wrapper {
+  width: 22rem;
+  border: 1px solid #e5e6e8;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.main-content {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.App {
+  width: 94rem;
+  margin: 0 auto;
+}
+
+.card-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.card-title {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  padding-top: 0;
+}
+
+.person-img-wrapper {
+  width: 22rem;
+}
+
+.legend {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-info {
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.card-title-person {
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+
+.info-names {
+  text-decoration: underline;
+}
+
+fieldset:last-child {
+  padding-bottom: 0.8rem;
+}
+
+.info-block-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+}
+
+.person-info {
+  flex-grow: 1;
+  margin-left: 1.6rem;
+  margin-right: 0.4rem;
+}
+
+.info-page-wrapper {
+  width: 95.5rem;
+  margin: 0 auto;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.invinsible {
+  visibility: hidden;
+  margin-top: 0.5rem;
+}
+
+.card-names {
+  padding: 3rem 1rem 2.5rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 140%;
+}
+
+h1 {
+  padding-left: 1.4rem;
+  padding-bottom: 1.4rem;
+  padding-top: 0.8rem;
+}
+
+/* ------------------------------------------ loading div styling ---------------------------------- */
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #006400;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+/* 
+------------------------------section end -------------------------------- */
